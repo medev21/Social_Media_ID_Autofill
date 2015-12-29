@@ -10,6 +10,8 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+
     <!-- Latest compiled and minified JavaScript -->
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -18,21 +20,30 @@
   <body>
     <div class="container">
       <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+          <h2>Social Media Main URL add on to user id</h2>
+          <br>
+          <p>
+            Try to type just your linkedin or github username and hit tab, this
+            wil automatically fill add the home url to your user id.  A small
+            project of mine to improve user experience when filling out forms,
+            that way you don't have to copy and paste your social media link.
+          </p>
+          <br>
+          <form class="sign-in">
+            <div class="form-group">
+              <label for="linkedinLink">Linkedin Link</label>
+              <input type="text" class="form-control" onchange="changeLinkedin(this.val)" id="linkedinLink" placeholder="type just your linkedin id, not the url">
+            </div>
+          </form>
 
-        <form>
-          <div class="form-group">
-            <label for="linkedinLink">Linkedin Link</label>
-            <input type="text" class="form-control" onchange="changeLinkedin(this.val)" id="linkedinLink" placeholder="type just your linkedin id, not the url">
-          </div>
-        </form>
-
-        <form>
-          <div class="form-group">
-            <label for="githubLink">Github Link</label>
-            <input type="text" class="form-control" onchange="changeGithub(this.val)" id="githubLink" placeholder="type just your github id, not the url">
-          </div>
-        </form>
-
+          <form>
+            <div class="form-group">
+              <label for="githubLink">Github Link</label>
+              <input type="text" class="form-control" onchange="changeGithub(this.val)" id="githubLink" placeholder="type just your github id, not the url">
+            </div>
+          </form>
+        </div>
       </div>
     </div>
     <script src="app.js"></script>

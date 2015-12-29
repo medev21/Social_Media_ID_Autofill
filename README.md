@@ -8,4 +8,6 @@ https://github.com/medev21
 
 This is just small project of mine to see if I can improve user experience.
 
-Work in progess....
+The page was done with -> HTML, CSS, Bootstrap, and Javascript
+
+Please let me know if you have suggestions or comments.

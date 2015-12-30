@@ -10,4 +10,6 @@ This is just small project of mine to see if I can improve user experience.
 
 The page was done with -> HTML, CSS, Bootstrap, and Javascript
 
+See [Demo](http://medev21.github.io/Social_Media_ID_Autofill/)
+
 Please let me know if you have suggestions or comments.
